@@ -1,0 +1,19 @@
+Algorithms
+
+______________________________________________
+array elements : 1   8   5    3          NULL
+______________________________________________
+index          : 0   1   2    3          4
+______________________________________________
+                arr         arr+(n-1)   arr+n
+______________________________________________
+
+
+sorting
+- sort(arr,arr + n)
+    arr : array er start 
+    arr+n : array er end
+
+
+- sort(arr, arr + n, greater<int> ())
+- sort(v.begin(), v.end());

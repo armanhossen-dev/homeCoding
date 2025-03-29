@@ -10,8 +10,29 @@ sorted order e store hoite
 
 set<int> s;
 
-- insert, emplace;
-- count
-- erase
-- find
+- insert, emplace;|
+- count           |  
+- erase           |  
+- find            |-> works O(logn)
 - size, empty
+
+- lower_bound(4), jodi 4 take tahole 4 er addess dibe, 
+na tak le 4 er teke kase jeta boro ase setar iterator as be, 
+
+a a b b b c c d
+0 1 2 3 4 5 6 7
+
+lower_bound('b') -> should not be less than key - b index 2
+upper_bound('b') -> greater than key            - c index 5
+
+
+multi set
+#include<set>
+multiset<int> s; //then dublicate elements will be added and while printed they will be shown, but in a ordered they will be stored
+
+unordered set
+#include<unordered_set>
+unordered_set<int>  s;  O(1)  
+
+
+lower_bound, upper_bound is only works for "set" or "multiset", not for "unordered set"
