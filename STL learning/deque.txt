@@ -1,0 +1,26 @@
+Deque: Double Ended Queue
+deque<int> d = {1,2,3};
+
+"dequeue" and "deque" are not same
+Deque: Double Ended Queue
+dequeue: means pop any element form a Queue
+
+deque : dynamic arrays used so random access possible
+list : dubly linkedlist so no random access
+
+so if we use listVariable[2] gives error
+ana we use dequeVariable[2] it will give the value
+
+#include<deque> has to be included to our program to use it
+
+
+imagin a list, which has two ends , like a pipe, 
+
+- push_back & push_front
+- emplace_back & emplace_front
+- pop_back & pop_front
+
+//it can use functions like
+size, erase, clear, begin, end,
+rbegin, rend, insert, front, back
+

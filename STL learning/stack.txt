@@ -1,0 +1,28 @@
+structure which is like a piller, made of books
+aktar opore arek ta raka
+akebare top e add or pop hoi, and top e jete tak be setai top
+
+we need to include
+#include<stack>
+
+stack<int> s;
+
+s.push(1);
+s.push(2);
+s.push(3);
+
+'s.top()' this will give the top elements value, the last value was inserted 3, so its the top, top will be 3
+
+s.pop(); // this will delete the current top value / element from the stack
+
+
+
+stack - LIFO - 'last in  first out' data structure
+ - push, emplace
+ - top
+ - pop
+ - size
+ - empty
+ - swap
+
+push,emplace, top, pop -> time complexity O(1)

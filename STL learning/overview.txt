@@ -1,0 +1,50 @@
+STL = standard template library
+-> Containers
+-> Iterators
+-> Algorithms
+-> Functors / functions or factors ?
+
+//containers - sequencial, ordered, unordered
+
+sequencial - 
+    - vector
+    - stack
+    - queue
+    - pair(not a container)
+
+ordered - (sorted order maintained :  accending or decending)
+    - maps
+    - multimap
+    - set
+    - multiset
+
+unordered-(hashing methode is used)
+    - unordered map
+    - unordered set
+
+Nested Containers
+- vector<vector<int>>
+- map<int, vector<int>>
+- set<pair < int, string>>
+- vector< map <int , set < int>>>
+
+Iterators (similar to pointers, implimented to stl containers er memory address ke point kor te)
+- point to memory address of containers
+- begin(), end()
+
+Algorithms
+    Binary search
+        - upper baund 
+        - lower baund 
+    - sort (comparator)
+    - max - element
+    - min - element
+    - accumulate(find the sum of array elements)
+    - reverse
+    - count
+    - find
+    - next permutations
+    - prev permutations
+
+Functors
+- classes which can actt as functions

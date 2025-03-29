@@ -1,0 +1,119 @@
+vector -> dynamic / resize
+    vector<int> vec;
+    vector<int> vec = {1,2};
+    vector<int> vec(3,10);
+    vector<int> vec2(vec1);
+
+code: 
+-------------------------------------
+    #include<iostream>
+    #include<vector>
+    using namespace std;
+
+    int main(){
+        vector<int> vec; //initial e kono vector declare kor le er size zero ta-ke,
+        cout << vec.size() << endl; // 0
+    }
+-------------------------------------
+
+
+vector 
+ - size & capacity -- size : the number of elements that are stored in vector, capacity:each level the capaciy goes double , 
+    [1] - level 1 , only declared a vector and then assign or push_back data 1
+    [1][2] - level 2, the capacity is 2, now the previous data 1 is copied and '2' is added
+    [1][2][3][] - level 3, the capacity is 4, now the previous data 1,2 is copied and 3  is added, and one more memory space is remaining, 
+
+ - push_back & pop_back
+    //push_back to add any new element at the last of vec array
+    //push_back er moto kaj kore emplace_back
+    pop_back will delete from the last
+
+ - emplace_back
+
+ - at() or []
+    we can use or access any element of vector by vec[index], or vec.at(index);
+ 
+ - front & back function
+    and when we have to work with 1st elemen then front
+    when we have last element of vector we use back
+
+
+vector initializetion
+
+vector<int> vec;
+vector<int> vec1 = {1,2,3,4,5};
+
+vector<int> vec2(10,0); 
+    // this means vec2 has size 10, and every elements are zero, and there is 10 elements
+    it means vec2 -> 0 0 0 0 0 0 0 0 0 0 ->this is used in - ///dynamic programming - tabulation -DP[][]
+
+vector<int> vec2(vec1); 
+    // we pass the value of vec1 to vec2 to initialize it,
+    it means vec1 er value gula vec2 er value hisebe copy hoye add hobe
+
+
+vector functions:
+    erase - vecVariable.erase(vecVariable.begin()+indexNumber);
+        
+        ---------------------------------------------------------------------------------------------------------------------
+        //aksate onek gula delete kor te par bo, akta range dia dibo, vec.erase(start,end) emon
+        vector<int> vec5 = {21,22,23,24,25,26,27,28,29,30};
+        //            idx=  0  1  2  3  4  5  6  7  8   9
+        for(int iy: vec5){
+            cout << iy << " ";
+        }
+        cout << endl;
+        //now i want to delete from idx 2 to 6 , so i will start from index 2, end in idx 7, this will delete to 6
+        vec5.erase(vec5.begin()+2, vec5.begin()+7); //now remaining will be
+        for(int iy: vec5){                          //21,22,28,29,30
+            cout << iy << " ";
+        }
+        cout << endl;
+        ---------------------------------------------------------------------------------------------------------------------
+
+        - erase verctor er size komai te pare, elements delete kore, but vector er capacity same tak be
+
+
+        erase / insert has o(n) time complexity in worse case
+        and push_back, pop_back, emplace_back has o(1)  complexity
+
+    insert
+        - vec.insert(position, value);
+
+        - push_back, pop_back these function always work from the end of the array, insert or delete
+        - we use insert to insert an element in any position
+
+    clear
+        - vec.clear(); this will clear the entire vector
+        this clears all elements but the capacity remains same
+
+    empty
+        - this checks if the vector is empty or not
+           //vec7.empty() = 1 ture
+           //vec7.empty() = 0 false 
+
+vector iterators
+    - vec.bergin ----------> gives the first elemenet memory address or location
+    - vec.end    ----------> does'nt gives the last elemenet memory address ,
+    vec.end points to the last elements next positions where the future data will come and store
+    so this two iterators gives location, so if we use 'the de-reference operator' -> '*', star, like this
+    *(vec.begin());, this will print the vec.begin() locations elements value
+    *(vec.end()); this will print the value of the end elements next value, which is zero, 
+
+    - rbegin reverse begin
+    - rend reverse end 
+
+    generaly we use this iterators to use in the loops for vectors
+    like this
+    -----------------------------------------------
+    //forward
+    vector<int> :: iterator it;
+    for(it = vec.begin(); it!=vec.end(); it++){
+        cout << *(it) << endl;
+    }
+    -----------------------------------------------
+    //backward
+    for(auto it = vec.rbegin(); it!=vec.rend(); it++){
+        cout << *(it) << endl;
+    }
+    -----------------------------------------------

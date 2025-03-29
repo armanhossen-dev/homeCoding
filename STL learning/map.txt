@@ -1,0 +1,47 @@
+Map (key, values)
+imagine a table of 2 column keys and values
+
+
+ keys_|values_|
+______|_______|
+______|_______|
+______|_______|
+______|_______|
+______|_______|
+
+here each table there is different keys, and unique keys
+values can be same , like names ;
+but keys are always unique
+
+
+#include<map>
+
+map<key, value> variable;
+m[key] = value;
+
+map<string, int> m;
+
+while print or 
+    for(auto p : m){
+            cout << p.first << ' ' << p.second << endl;
+    }
+while print, we see that the key are printed in lexiographical way, 
+
+so, map by default data sort kre, in ascending order,
+
+
+m.erase("monitor"); // monotor will be romved or deleted from map
+m.insert({"camera", 23000});
+m.emplace("phone", 20000);
+cout << "count = " << m.count("laptop") << endl; // counts key laptop how much time is there
+
+  - insert, emplace
+  - count 
+  - erase
+  - find
+      -if found -(jake find kor lam tar) iterator return
+      -not found - 'm.end()'-(full map er last value er pore je iterator hobe sei value return kore)
+  - size, empty, 
+
+
+

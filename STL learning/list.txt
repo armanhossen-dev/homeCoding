@@ -1,0 +1,25 @@
+list (works as doubly linked list)
+list<int> l = {1,2,3};
+
+we include <list>
+#include<list>
+
+here we can 
+    - push from 'back' and push from "front".
+    - pop from 'back' and pop from "front".
+
+
+
+
+
+list    
+    - push_back & push_front
+    - emplace_back & emplace_front
+    - pop_back & pop_front
+
+    //size, erase, clear, begin, end, rbegin,
+    rend,insert, front, back - this are use full in both 
+    vector and list, 
+    //just the differece in list is here i can push/emplace/pop_front
+    vector is dynamic array
+    list is doubly linkedlist

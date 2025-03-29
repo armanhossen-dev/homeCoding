@@ -1,0 +1,13 @@
+Queue - FIFO - 'First in First out'
+-> like a line of people in a bank, people adds from lines end, and first of the line in the ahed gets bankservices first
+queue<int> q;
+
+queue functions
+ - push, emplace
+ - front
+ - pop
+ - size
+ - empty
+ - swap
+
+push,pop, front, emplace -> time complexity O(1)

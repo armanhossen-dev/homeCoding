@@ -1,0 +1,17 @@
+set
+#include<set>
+
+dublicate value store kore na
+dublicate value er jonnne size bare na
+
+set er vitore sob somoi unique value store hoite pare
+it works like math set, 
+sorted order e store hoite
+
+set<int> s;
+
+- insert, emplace;
+- count
+- erase
+- find
+- size, empty

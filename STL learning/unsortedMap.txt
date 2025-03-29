@@ -1,0 +1,13 @@
+unordered map
+#include<unordered_map>
+
+unordered map e 
+        - insert |
+        - erase  | --> O(1)
+        - count  |
+or O(n)--------------------
+
+map {set balancing tree} 
+insert, erase, count - o(logn)
+
+

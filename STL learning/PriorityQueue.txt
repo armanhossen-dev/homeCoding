@@ -1,0 +1,27 @@
+Priority  Queue
+----------------
+max heap or min heap structure use kore 'BST'
+--------   ---------
+top max    top min
+
+--> this willl gives the sorted array or result, the max-min order, 
+
+
+
+
+#include<queue>
+
+priority_queue<int> q; //this to get the decending order .. max to min value
+
+priority_queue<int,vector<int>, greater<int>> q; // this to get accending order, // min to max value
+{here, greater - is a functor, functor means a function object}
+we can understand 'greater<int>' as a comparator; which gives logic to find accending or decnding order
+ - push, emplace
+ - top
+ - pop
+ - size
+ - empty
+
+ push,emplace,pop -> time complexity O(logn) like tree used sorting work done, so time complexity increased
+
+ top -> time complexity O(1)
