@@ -1,0 +1,23 @@
+min(3,4) hole 3 return kor be
+max(3,4) hole 4 return kor be
+
+.max & min element
+max_element(v.begin(), v.end())
+min_element(v.begin(), v.end())
+//max_element(vec.begin(), vec.end())  returns an iterator, not the actual maximum value so i have to use * to dereferences the iterator to get the actual value. 
+
+
+.Binary Search
+binary_search(v.begin(), v.end(), target)
+- this will return bool value true or false return kore , target exists or not
+//bool 1 = true
+//     0 = false
+
+
+
+.Count Set Bits  - we use this in cp 
+__builtin_popcount()  -> when we find for a int or integer value
+__builtin_popcountl() -> for long int 
+__builtin_popcountll()-> for long long int 
+
+int 4 Byte

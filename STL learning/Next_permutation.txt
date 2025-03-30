@@ -1,0 +1,17 @@
+Next Permutation 
+next_permutation(v.begin(), v.end())
+possible permutation of abc
+abc 
+ - abc
+ - acb 
+ - bac 
+ - bca 
+ - cab
+ - cba 
+_____ 6 form = n! , all this permutation is in Lexicographic order
+any n length word er jonnne n! , 
+
+//Lexicographic order
+generalization of the way the alphabetical 
+order of words is based on the alphabetical 
+order of their component letters
