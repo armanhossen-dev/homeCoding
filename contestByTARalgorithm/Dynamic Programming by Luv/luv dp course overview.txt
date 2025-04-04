@@ -1,0 +1,29 @@
+//those who don't remember the past are condemned to repeat it -
+
+dynamic programming
+
+- theory
+- top down / bottom up approch
+- recursion
+
+
+////////////////////
+standard problems for dp 
+ -> coin change
+ -> edit distance
+ -> rod cutting
+ -> longest incrreasing subsequence
+ -> knapsack
+    -> subset problem
+ -> longest common subsequence / LCS / substring
+
+class 1. dynamic programming
+ - approacing problems
+ - Top down / Bottom up
+ - Memoisation
+
+ 
+
+
+
+
