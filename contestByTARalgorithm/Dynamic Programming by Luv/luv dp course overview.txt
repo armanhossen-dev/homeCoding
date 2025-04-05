@@ -22,8 +22,16 @@ class 1. dynamic programming
  - Top down / Bottom up
  - Memoisation
 
- 
+//https://atcoder.jp/contests/dp/tasks
+
+//https://www.freecodecamp.org/
 
 
-
+/*
+- ai and ml development
+- blockchain development
+- ui/ux design
+- web3 development
+- content creation and video editing
+*/
 
